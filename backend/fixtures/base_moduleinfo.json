@@ -1,0 +1,18 @@
+{
+  "table_name": "base_moduleinfo",
+  "create_table_sql": "CREATE TABLE `base_moduleinfo` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `module_name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  `project_belong_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `module_name` (`module_name`),\n  KEY `api_moduleinfo_creator_id_3a59d5c4` (`creator_id`),\n  KEY `api_moduleinfo_project_belong_id_3445c1f2` (`project_belong_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='模块信息'",
+  "data": [
+    {
+      "id": 1,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": "1",
+      "update_datetime": "2025-11-15 11:47:53.951948",
+      "create_datetime": "2025-11-15 11:47:53.951948",
+      "module_name": "登录",
+      "creator_id": 1,
+      "project_belong_id": 1
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

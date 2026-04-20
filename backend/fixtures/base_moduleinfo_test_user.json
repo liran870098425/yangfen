@@ -1,0 +1,12 @@
+{
+  "table_name": "base_moduleinfo_test_user",
+  "create_table_sql": "CREATE TABLE `base_moduleinfo_test_user` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `moduleinfo_id` bigint NOT NULL,\n  `users_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `api_moduleinfo_test_user_moduleinfo_id_users_id_e72e048e_uniq` (`moduleinfo_id`,`users_id`),\n  KEY `api_moduleinfo_test_user_moduleinfo_id_10b84fa6` (`moduleinfo_id`),\n  KEY `api_moduleinfo_test_user_users_id_b0df6d6b` (`users_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [
+    {
+      "id": 1,
+      "moduleinfo_id": 1,
+      "users_id": 3
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

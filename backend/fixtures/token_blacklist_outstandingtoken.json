@@ -1,0 +1,23 @@
+{
+  "table_name": "token_blacklist_outstandingtoken",
+  "create_table_sql": "CREATE TABLE `token_blacklist_outstandingtoken` (\n  `id` bigint NOT NULL AUTO_INCREMENT,\n  `token` longtext COLLATE utf8mb4_unicode_ci NOT NULL,\n  `created_at` datetime(6) DEFAULT NULL,\n  `expires_at` datetime(6) NOT NULL,\n  `user_id` bigint DEFAULT NULL,\n  `jti` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `token_blacklist_outstandingtoken_jti_hex_d9bdf6f7_uniq` (`jti`),\n  KEY `token_blacklist_outs_user_id_83bc629a_fk_dvadmin_s` (`user_id`),\n  CONSTRAINT `token_blacklist_outs_user_id_83bc629a_fk_dvadmin_s` FOREIGN KEY (`user_id`) REFERENCES `dvadmin_system_users` (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='outstanding token'",
+  "data": [
+    {
+      "id": 1,
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MzIyMjE0NSwiaWF0IjoxNzYzMTM1NzQ1LCJqdGkiOiJlYTQyZTRiOTU2NzY0Y2UzOTU5Y2MzODRjYzg1MDkzMyIsInVzZXJfaWQiOjF9.wpvVjsS4skelp7vAaTf5x2Z1Xedf-ni7N9SHyg2WkG4",
+      "created_at": "2025-11-14 15:55:45.096252",
+      "expires_at": "2025-11-15 15:55:45",
+      "user_id": 1,
+      "jti": "ea42e4b956764ce3959cc384cc850933"
+    },
+    {
+      "id": 2,
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MzI1NTQ5NiwiaWF0IjoxNzYzMTY5MDk2LCJqdGkiOiJkMWM5OTc5NmRmMjg0MGY2YmU2NThlZGFkNzIyMTA1MiIsInVzZXJfaWQiOjF9.GDmZfs0xW6SVUlq9AXOCBOr0Rf5j2GgrHFFiptuVyNg",
+      "created_at": "2025-11-15 01:11:36.535266",
+      "expires_at": "2025-11-16 01:11:36",
+      "user_id": 1,
+      "jti": "d1c99796df2840f6be658edad7221052"
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

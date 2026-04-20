@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_message_center_target_dept",
+  "create_table_sql": "CREATE TABLE `dvadmin_message_center_target_dept` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `messagecenter_id` bigint NOT NULL,\n  `dept_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_message_center_t_messagecenter_id_dept_id_d9fb0c77_uniq` (`messagecenter_id`,`dept_id`),\n  KEY `dvadmin_message_center_target_dept_messagecenter_id_69868c17` (`messagecenter_id`),\n  KEY `dvadmin_message_center_target_dept_dept_id_616decc4` (`dept_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

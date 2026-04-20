@@ -1,0 +1,132 @@
+{
+  "table_name": "django_content_type",
+  "create_table_sql": "CREATE TABLE `django_content_type` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `app_label` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `model` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `django_content_type_app_label_model_76bd3d3b_uniq` (`app_label`,`model`)\n) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='content type'",
+  "data": [
+    {
+      "id": 2,
+      "app_label": "auth",
+      "model": "group"
+    },
+    {
+      "id": 1,
+      "app_label": "auth",
+      "model": "permission"
+    },
+    {
+      "id": 25,
+      "app_label": "base",
+      "model": "envinfo"
+    },
+    {
+      "id": 24,
+      "app_label": "base",
+      "model": "moduleinfo"
+    },
+    {
+      "id": 23,
+      "app_label": "base",
+      "model": "projectinfo"
+    },
+    {
+      "id": 22,
+      "app_label": "captcha",
+      "model": "captchastore"
+    },
+    {
+      "id": 3,
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    },
+    {
+      "id": 4,
+      "app_label": "sessions",
+      "model": "session"
+    },
+    {
+      "id": 20,
+      "app_label": "system",
+      "model": "apiwhitelist"
+    },
+    {
+      "id": 19,
+      "app_label": "system",
+      "model": "area"
+    },
+    {
+      "id": 8,
+      "app_label": "system",
+      "model": "dept"
+    },
+    {
+      "id": 18,
+      "app_label": "system",
+      "model": "dictionary"
+    },
+    {
+      "id": 17,
+      "app_label": "system",
+      "model": "filelist"
+    },
+    {
+      "id": 16,
+      "app_label": "system",
+      "model": "loginlog"
+    },
+    {
+      "id": 9,
+      "app_label": "system",
+      "model": "menu"
+    },
+    {
+      "id": 10,
+      "app_label": "system",
+      "model": "menubutton"
+    },
+    {
+      "id": 11,
+      "app_label": "system",
+      "model": "messagecenter"
+    },
+    {
+      "id": 15,
+      "app_label": "system",
+      "model": "messagecentertargetuser"
+    },
+    {
+      "id": 14,
+      "app_label": "system",
+      "model": "operationlog"
+    },
+    {
+      "id": 13,
+      "app_label": "system",
+      "model": "post"
+    },
+    {
+      "id": 12,
+      "app_label": "system",
+      "model": "role"
+    },
+    {
+      "id": 21,
+      "app_label": "system",
+      "model": "systemconfig"
+    },
+    {
+      "id": 7,
+      "app_label": "system",
+      "model": "users"
+    },
+    {
+      "id": 5,
+      "app_label": "token_blacklist",
+      "model": "blacklistedtoken"
+    },
+    {
+      "id": 6,
+      "app_label": "token_blacklist",
+      "model": "outstandingtoken"
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

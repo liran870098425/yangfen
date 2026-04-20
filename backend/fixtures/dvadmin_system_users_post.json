@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_system_users_post",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_users_post` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `users_id` bigint NOT NULL,\n  `post_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_system_users_post_users_id_post_id_41f83b22_uniq` (`users_id`,`post_id`),\n  KEY `dvadmin_system_users_post_users_id_8ab2e760` (`users_id`),\n  KEY `dvadmin_system_users_post_post_id_50054985` (`post_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

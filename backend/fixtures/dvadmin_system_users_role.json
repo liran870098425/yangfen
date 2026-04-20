@@ -1,0 +1,17 @@
+{
+  "table_name": "dvadmin_system_users_role",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_users_role` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `users_id` bigint NOT NULL,\n  `role_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_system_users_role_users_id_role_id_02908e92_uniq` (`users_id`,`role_id`),\n  KEY `dvadmin_system_users_role_users_id_a25207bc` (`users_id`),\n  KEY `dvadmin_system_users_role_role_id_e37d9591` (`role_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [
+    {
+      "id": 1,
+      "users_id": 1,
+      "role_id": 1
+    },
+    {
+      "id": 2,
+      "users_id": 3,
+      "role_id": 2
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

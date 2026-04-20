@@ -1,0 +1,193 @@
+{
+  "table_name": "django_migrations",
+  "create_table_sql": "CREATE TABLE `django_migrations` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `app` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `applied` datetime(6) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [
+    {
+      "id": 1,
+      "app": "contenttypes",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:41.645402"
+    },
+    {
+      "id": 2,
+      "app": "contenttypes",
+      "name": "0002_remove_content_type_name",
+      "applied": "2025-11-14 23:20:41.707841"
+    },
+    {
+      "id": 3,
+      "app": "auth",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:42.008747"
+    },
+    {
+      "id": 4,
+      "app": "auth",
+      "name": "0002_alter_permission_name_max_length",
+      "applied": "2025-11-14 23:20:42.064490"
+    },
+    {
+      "id": 5,
+      "app": "auth",
+      "name": "0003_alter_user_email_max_length",
+      "applied": "2025-11-14 23:20:42.074522"
+    },
+    {
+      "id": 6,
+      "app": "auth",
+      "name": "0004_alter_user_username_opts",
+      "applied": "2025-11-14 23:20:42.085040"
+    },
+    {
+      "id": 7,
+      "app": "auth",
+      "name": "0005_alter_user_last_login_null",
+      "applied": "2025-11-14 23:20:42.094059"
+    },
+    {
+      "id": 8,
+      "app": "auth",
+      "name": "0006_require_contenttypes_0002",
+      "applied": "2025-11-14 23:20:42.101007"
+    },
+    {
+      "id": 9,
+      "app": "auth",
+      "name": "0007_alter_validators_add_error_messages",
+      "applied": "2025-11-14 23:20:42.110372"
+    },
+    {
+      "id": 10,
+      "app": "auth",
+      "name": "0008_alter_user_username_max_length",
+      "applied": "2025-11-14 23:20:42.120511"
+    },
+    {
+      "id": 11,
+      "app": "auth",
+      "name": "0009_alter_user_last_name_max_length",
+      "applied": "2025-11-14 23:20:42.131530"
+    },
+    {
+      "id": 12,
+      "app": "auth",
+      "name": "0010_alter_group_name_max_length",
+      "applied": "2025-11-14 23:20:42.149530"
+    },
+    {
+      "id": 13,
+      "app": "auth",
+      "name": "0011_update_proxy_permissions",
+      "applied": "2025-11-14 23:20:42.161971"
+    },
+    {
+      "id": 14,
+      "app": "auth",
+      "name": "0012_alter_user_first_name_max_length",
+      "applied": "2025-11-14 23:20:42.171651"
+    },
+    {
+      "id": 15,
+      "app": "system",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:44.325424"
+    },
+    {
+      "id": 16,
+      "app": "base",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:44.707275"
+    },
+    {
+      "id": 17,
+      "app": "base",
+      "name": "0002_auto_20251114_2259",
+      "applied": "2025-11-14 23:20:44.843228"
+    },
+    {
+      "id": 18,
+      "app": "captcha",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:44.883393"
+    },
+    {
+      "id": 19,
+      "app": "sessions",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:44.929333"
+    },
+    {
+      "id": 20,
+      "app": "token_blacklist",
+      "name": "0001_initial",
+      "applied": "2025-11-14 23:20:45.234008"
+    },
+    {
+      "id": 21,
+      "app": "token_blacklist",
+      "name": "0002_outstandingtoken_jti_hex",
+      "applied": "2025-11-14 23:20:45.278356"
+    },
+    {
+      "id": 22,
+      "app": "token_blacklist",
+      "name": "0003_auto_20171017_2007",
+      "applied": "2025-11-14 23:20:45.312519"
+    },
+    {
+      "id": 23,
+      "app": "token_blacklist",
+      "name": "0004_auto_20171017_2013",
+      "applied": "2025-11-14 23:20:45.408358"
+    },
+    {
+      "id": 24,
+      "app": "token_blacklist",
+      "name": "0005_remove_outstandingtoken_jti",
+      "applied": "2025-11-14 23:20:45.476662"
+    },
+    {
+      "id": 25,
+      "app": "token_blacklist",
+      "name": "0006_auto_20171017_2113",
+      "applied": "2025-11-14 23:20:45.520288"
+    },
+    {
+      "id": 26,
+      "app": "token_blacklist",
+      "name": "0007_auto_20171017_2214",
+      "applied": "2025-11-14 23:20:45.753186"
+    },
+    {
+      "id": 27,
+      "app": "token_blacklist",
+      "name": "0008_migrate_to_bigautofield",
+      "applied": "2025-11-14 23:20:45.984359"
+    },
+    {
+      "id": 28,
+      "app": "token_blacklist",
+      "name": "0010_fix_migrate_to_bigautofield",
+      "applied": "2025-11-14 23:20:46.017720"
+    },
+    {
+      "id": 29,
+      "app": "token_blacklist",
+      "name": "0011_linearizes_history",
+      "applied": "2025-11-14 23:20:46.024240"
+    },
+    {
+      "id": 30,
+      "app": "token_blacklist",
+      "name": "0012_alter_outstandingtoken_user",
+      "applied": "2025-11-14 23:20:46.052166"
+    },
+    {
+      "id": 31,
+      "app": "base",
+      "name": "0003_auto_20251115_0919",
+      "applied": "2025-11-15 09:19:57.976468"
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

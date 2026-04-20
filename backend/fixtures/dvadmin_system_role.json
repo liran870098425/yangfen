@@ -1,0 +1,39 @@
+{
+  "table_name": "dvadmin_system_role",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_role` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `name` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '角色名称',\n  `key` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '权限字符',\n  `sort` int NOT NULL COMMENT '角色顺序',\n  `status` tinyint(1) NOT NULL COMMENT '角色状态',\n  `admin` tinyint(1) NOT NULL COMMENT '是否为admin',\n  `data_range` int NOT NULL COMMENT '数据权限范围',\n  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `key` (`key`),\n  KEY `dvadmin_system_role_creator_id_a89a9bc7` (`creator_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='角色表'",
+  "data": [
+    {
+      "id": 1,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:45:40.426195",
+      "create_datetime": "2025-11-14 23:43:07.065559",
+      "name": "管理员",
+      "key": "admin",
+      "sort": 1,
+      "status": 1,
+      "admin": 1,
+      "data_range": 3,
+      "remark": null,
+      "creator_id": null
+    },
+    {
+      "id": 2,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:45:40.434787",
+      "create_datetime": "2025-11-14 23:43:07.072717",
+      "name": "用户",
+      "key": "public",
+      "sort": 2,
+      "status": 1,
+      "admin": 1,
+      "data_range": 3,
+      "remark": null,
+      "creator_id": null
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

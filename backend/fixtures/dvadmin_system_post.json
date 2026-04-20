@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_system_post",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_post` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `name` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '岗位名称',\n  `code` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '岗位编码',\n  `sort` int NOT NULL COMMENT '岗位顺序',\n  `status` int NOT NULL COMMENT '岗位状态',\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  PRIMARY KEY (`id`),\n  KEY `dvadmin_system_post_creator_id_b5ef9351` (`creator_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='岗位表'",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

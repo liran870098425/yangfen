@@ -1,0 +1,17 @@
+{
+  "table_name": "base_projectinfo_responsible_user",
+  "create_table_sql": "CREATE TABLE `base_projectinfo_responsible_user` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `projectinfo_id` bigint NOT NULL,\n  `users_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `api_projectinfo_responsi_projectinfo_id_users_id_43cbb8f9_uniq` (`projectinfo_id`,`users_id`),\n  KEY `api_projectinfo_responsible_user_projectinfo_id_8516afc8` (`projectinfo_id`),\n  KEY `api_projectinfo_responsible_user_users_id_82cdcbbc` (`users_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [
+    {
+      "id": 1,
+      "projectinfo_id": 1,
+      "users_id": 3
+    },
+    {
+      "id": 2,
+      "projectinfo_id": 2,
+      "users_id": 3
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

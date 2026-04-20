@@ -1,0 +1,29 @@
+{
+  "table_name": "base_projectinfo",
+  "create_table_sql": "CREATE TABLE `base_projectinfo` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `project_name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `publish_app` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `project_name` (`project_name`),\n  KEY `api_projectinfo_creator_id_d0a6d1c7` (`creator_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='项目信息'",
+  "data": [
+    {
+      "id": 1,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": "1",
+      "update_datetime": "2025-11-15 09:26:31.566369",
+      "create_datetime": "2025-11-15 09:26:31.566369",
+      "project_name": "电商项目",
+      "publish_app": "京东飞天",
+      "creator_id": 1
+    },
+    {
+      "id": 2,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": "1",
+      "update_datetime": "2025-11-15 09:26:53.650374",
+      "create_datetime": "2025-11-15 09:26:53.650374",
+      "project_name": "物流项目",
+      "publish_app": "运多多",
+      "creator_id": 1
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

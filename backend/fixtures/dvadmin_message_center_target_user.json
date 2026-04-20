@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_message_center_target_user",
+  "create_table_sql": "CREATE TABLE `dvadmin_message_center_target_user` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `is_read` tinyint(1) DEFAULT NULL COMMENT '是否已读',\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  `messagecenter_id` bigint NOT NULL COMMENT '关联消息中心表',\n  `users_id` bigint NOT NULL COMMENT '关联用户表',\n  PRIMARY KEY (`id`),\n  KEY `dvadmin_message_center_target_user_creator_id_0a27a561` (`creator_id`),\n  KEY `dvadmin_message_center_target_user_messagecenter_id_54f35bf8` (`messagecenter_id`),\n  KEY `dvadmin_message_center_target_user_users_id_9ff81ff5` (`users_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='消息中心目标用户表'",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

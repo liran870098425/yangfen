@@ -1,0 +1,28 @@
+{
+  "table_name": "captcha_captchastore",
+  "create_table_sql": "CREATE TABLE `captcha_captchastore` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `challenge` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `response` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `hashkey` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `expiration` datetime(6) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `hashkey` (`hashkey`)\n) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='captcha store'",
+  "data": [
+    {
+      "id": 1,
+      "challenge": "10+5=",
+      "response": "15",
+      "hashkey": "6934de08a0e203f3454b66136b9e544511e8ea56",
+      "expiration": "2025-11-14 23:55:53.951909"
+    },
+    {
+      "id": 2,
+      "challenge": "2+1=",
+      "response": "3",
+      "hashkey": "f20aefd7d0871ee56af88499ee10a9f939bdfe5b",
+      "expiration": "2025-11-14 23:56:40.929567"
+    },
+    {
+      "id": 3,
+      "challenge": "4*9=",
+      "response": "36",
+      "hashkey": "a1532c64b9f272cd2f9ae4ac4db4df75a3d8c233",
+      "expiration": "2025-11-14 23:56:41.899154"
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

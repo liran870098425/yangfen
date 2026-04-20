@@ -1,0 +1,6 @@
+{
+  "table_name": "django_session",
+  "create_table_sql": "CREATE TABLE `django_session` (\n  `session_key` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `session_data` longtext COLLATE utf8mb4_unicode_ci NOT NULL,\n  `expire_date` datetime(6) NOT NULL,\n  PRIMARY KEY (`session_key`),\n  KEY `django_session_expire_date_a5c62663` (`expire_date`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='session'",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

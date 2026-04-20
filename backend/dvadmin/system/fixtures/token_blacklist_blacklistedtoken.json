@@ -1,0 +1,6 @@
+{
+  "table_name": "token_blacklist_blacklistedtoken",
+  "create_table_sql": "CREATE TABLE `token_blacklist_blacklistedtoken` (\n  `id` bigint NOT NULL AUTO_INCREMENT,\n  `blacklisted_at` datetime(6) NOT NULL,\n  `token_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `token_id` (`token_id`),\n  CONSTRAINT `token_blacklist_blacklistedtoken_token_id_3cc7fe56_fk` FOREIGN KEY (`token_id`) REFERENCES `token_blacklist_outstandingtoken` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='blacklisted token'",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_system_users_user_permissions",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_users_user_permissions` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `users_id` bigint NOT NULL,\n  `permission_id` int NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_system_users_use_users_id_permission_id_24cd72ef_uniq` (`users_id`,`permission_id`),\n  KEY `dvadmin_system_users_permission_id_c8ec58dc_fk_auth_perm` (`permission_id`),\n  CONSTRAINT `dvadmin_system_users_permission_id_c8ec58dc_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),\n  CONSTRAINT `dvadmin_system_users_users_id_fd3b0217_fk_dvadmin_s` FOREIGN KEY (`users_id`) REFERENCES `dvadmin_system_users` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

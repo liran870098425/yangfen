@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_message_center_target_role",
+  "create_table_sql": "CREATE TABLE `dvadmin_message_center_target_role` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `messagecenter_id` bigint NOT NULL,\n  `role_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_message_center_t_messagecenter_id_role_id_f5a77970_uniq` (`messagecenter_id`,`role_id`),\n  KEY `dvadmin_message_center_target_role_messagecenter_id_41a7bd9d` (`messagecenter_id`),\n  KEY `dvadmin_message_center_target_role_role_id_661a61bb` (`role_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

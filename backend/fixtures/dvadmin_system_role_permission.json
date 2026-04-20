@@ -1,0 +1,6 @@
+{
+  "table_name": "dvadmin_system_role_permission",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_role_permission` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `role_id` bigint NOT NULL,\n  `menubutton_id` bigint NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dvadmin_system_role_perm_role_id_menubutton_id_46c1e3ca_uniq` (`role_id`,`menubutton_id`),\n  KEY `dvadmin_system_role_permission_role_id_bf988ad5` (`role_id`),\n  KEY `dvadmin_system_role_permission_menubutton_id_7ba32ee0` (`menubutton_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "data": [],
+  "backup_time": "2025-11-15 13:13:32"
+}

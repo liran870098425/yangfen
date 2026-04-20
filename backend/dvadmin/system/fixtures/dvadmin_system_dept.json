@@ -1,0 +1,58 @@
+{
+  "table_name": "dvadmin_system_dept",
+  "create_table_sql": "CREATE TABLE `dvadmin_system_dept` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `name` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '部门名称',\n  `key` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '关联字符',\n  `sort` int NOT NULL COMMENT '显示排序',\n  `owner` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '负责人',\n  `phone` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '联系电话',\n  `email` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '邮箱',\n  `status` tinyint(1) DEFAULT NULL COMMENT '部门状态',\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  `parent_id` bigint DEFAULT NULL COMMENT '上级部门',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `key` (`key`),\n  KEY `dvadmin_system_dept_creator_id_e69fd1ae` (`creator_id`),\n  KEY `dvadmin_system_dept_parent_id_0f9eb419` (`parent_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='部门表'",
+  "data": [
+    {
+      "id": 1,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:45:40.412996",
+      "create_datetime": "2025-11-14 23:43:07.038015",
+      "name": "DVAdmin团队",
+      "key": "dvadmin",
+      "sort": 1,
+      "owner": "",
+      "phone": "",
+      "email": "",
+      "status": 1,
+      "creator_id": null,
+      "parent_id": null
+    },
+    {
+      "id": 2,
+      "description": null,
+      "modifier": null,
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:43:07.046970",
+      "create_datetime": "2025-11-14 23:43:07.046970",
+      "name": "运营部",
+      "key": "",
+      "sort": 2,
+      "owner": "",
+      "phone": "",
+      "email": "",
+      "status": 1,
+      "creator_id": null,
+      "parent_id": 1
+    },
+    {
+      "id": 3,
+      "description": null,
+      "modifier": null,
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:43:07.055561",
+      "create_datetime": "2025-11-14 23:43:07.055561",
+      "name": "技术部",
+      "key": "technology",
+      "sort": 1,
+      "owner": "",
+      "phone": "",
+      "email": "",
+      "status": 1,
+      "creator_id": null,
+      "parent_id": 1
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}

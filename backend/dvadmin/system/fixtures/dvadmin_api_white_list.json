@@ -1,0 +1,19 @@
+{
+  "table_name": "dvadmin_api_white_list",
+  "create_table_sql": "CREATE TABLE `dvadmin_api_white_list` (\n  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'Id',\n  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '描述',\n  `modifier` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '修改人',\n  `dept_belong_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据归属部门',\n  `update_datetime` datetime(6) DEFAULT NULL COMMENT '修改时间',\n  `create_datetime` datetime(6) DEFAULT NULL COMMENT '创建时间',\n  `url` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'url地址',\n  `method` int DEFAULT NULL COMMENT '接口请求方法',\n  `enable_datasource` tinyint(1) NOT NULL COMMENT '激活数据权限',\n  `creator_id` bigint DEFAULT NULL COMMENT '创建人',\n  PRIMARY KEY (`id`),\n  KEY `dvadmin_api_white_list_creator_id_fd335789` (`creator_id`)\n) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='接口白名单'",
+  "data": [
+    {
+      "id": 1,
+      "description": null,
+      "modifier": "1",
+      "dept_belong_id": null,
+      "update_datetime": "2025-11-14 23:45:40.534214",
+      "create_datetime": "2025-11-14 23:43:07.778930",
+      "url": "/api/system/dept_lazy_tree/",
+      "method": 0,
+      "enable_datasource": 1,
+      "creator_id": null
+    }
+  ],
+  "backup_time": "2025-11-15 13:13:32"
+}
