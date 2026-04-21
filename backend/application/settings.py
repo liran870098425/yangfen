@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'uitest',
     'itemprice',
     'escortprice',
+    'runbladeprice',
 ]
 
 MIDDLEWARE = [

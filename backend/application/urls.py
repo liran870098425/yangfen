@@ -85,6 +85,7 @@ urlpatterns = (
             path('api/', include('uitest.urls')),
             path('api/', include('itemprice.urls')),
             path('api/', include('escortprice.urls')),
+            path('api/', include('runbladeprice.urls')),
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
